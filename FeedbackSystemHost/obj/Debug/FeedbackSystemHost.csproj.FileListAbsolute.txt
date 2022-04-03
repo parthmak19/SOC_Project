@@ -1,0 +1,11 @@
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemHost.exe.config
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemHost.exe
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemHost.pdb
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemService.dll
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemService.pdb
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\bin\Debug\FeedbackSystemService.dll.config
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\obj\Debug\FeedbackSystemHost.csproj.CoreCompileInputs.cache
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\obj\Debug\FeedbackSystemHost.csproj.CopyComplete
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\obj\Debug\FeedbackSystemHost.exe
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\obj\Debug\FeedbackSystemHost.pdb
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemHost\obj\Debug\FeedbackSystemHost.csproj.AssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\bin\Debug\FeedbackSystemService.dll.config
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\bin\Debug\FeedbackSystemService.dll
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\bin\Debug\FeedbackSystemService.pdb
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\obj\Debug\FeedbackSystemService.csproj.AssemblyReference.cache
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\obj\Debug\FeedbackSystemService.csproj.CoreCompileInputs.cache
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\obj\Debug\FeedbackSystemService.dll
+C:\Users\91816\source\repos\FeedbackSystem\FeedbackSystemService\obj\Debug\FeedbackSystemService.pdb
