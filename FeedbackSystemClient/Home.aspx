@@ -5,28 +5,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home</title>
+    <link href="lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
     <style>
-        .homebtn{
+        .homebtn {
             margin: auto;
             width: 1293px;
             padding-top: 40px;
             padding-bottom: 40px;
         }
-        .btn{
+
+        .btn {
             width: 250px;
-            margin-left:0px;
-            margin-right:20px;
+            margin-left: 0px;
+            margin-right: 20px;
             margin-top: 0px;
         }
-        .heading{
-            width:900px;
-            margin-top:20px;
-            margin-bottom:20px;
+
+        .heading {
+            width: 900px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             margin: auto;
-            font-size: 40px;
-            font-weight:800;
+            font-family:Georgia;
+            font-size: 45px;
+            font-weight: 900;
             text-align: center;
         }
+
         .centered-table {
             margin-left: auto;
             margin-right: auto
@@ -37,29 +42,13 @@
     <form id="form1" runat="server">
         <div>
             <div class="heading">
-            <asp:Label ID="Label1" runat="server" Text="Feedback System"></asp:Label>
-        </div>
-        <hr/>
-        <div style="text-align:center" class="homebtn">
-            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <asp:Button class="btn btn-primary btn-lg btn" ID="addFeedback" runat="server" Text="Add Feedback" OnClick="AddFeedback" />
-            <asp:Button class="btn btn-primary btn-lg btn" ID="updateFeedback" runat="server" Text="Update Feedback" OnClick="UpdateFeedback"/>
-            <asp:Button class="btn btn-primary btn-lg btn" ID="deleteFeedback" runat="server" Text="Delete Feedback" OnClick="DeleteFeedback"/>
-            &nbsp;
-        </div>
-        <hr/>
-
-                <br />
-                <br />
-         <div style="text-align:center" class="centered-table">
+                <asp:Label ID="Label1" runat="server" Text="Feedback System"></asp:Label>
+            </div>
+            <hr />
+            <br />
+            <div style="text-align: center" class="centered-table">
                 <asp:GridView ID="GridView1" runat="server" Height="252px" Width="1043px" HorizontalAlign="Center" CellPadding="4" ForeColor="#333333" GridLines="None">
                     <AlternatingRowStyle BackColor="White" />
-                    <Columns>
-                        <%-- <asp:hyperlinkfield datanavigateurlfields="id" datanavigateurlformatstring="updatefeedback.aspx?id={0}" text="update" />--%>
-                    </Columns>
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -71,12 +60,15 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
-             </div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+            </div>
+            <br />
+            <hr />
+            <div style="text-align: center" class="homebtn">
+                <asp:Button class="btn btn-success btn-lg btn" ID="addFeedback" runat="server" Text="Add Feedback" OnClick="AddFeedback" />
+                <asp:Button class="btn btn-warning btn-lg btn" ID="updateFeedback" runat="server" Text="Update Feedback" OnClick="UpdateFeedback" />
+                <asp:Button class="btn btn-danger btn-lg btn" ID="deleteFeedback" runat="server" Text="Delete Feedback" OnClick="DeleteFeedback" />
+                <asp:Button class="btn btn-primary btn-lg btn" ID="displayfeedbacks" runat="server" Text="Display Feedbacks" OnClick="DisplayFeedbacks" />
+            </div>
         </div>
     </form>
 </body>

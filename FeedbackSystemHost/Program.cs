@@ -13,7 +13,6 @@ namespace FeedbackSystemHost
         static void Main(string[] args)
         {
             Type t = typeof(FeedbackService);
-            //Uri tcp = new Uri("net.tcp://localhost:8010/FeedbackService");
             Uri http = new Uri("http://localhost:8000/FeedbackService");
             ServiceHost host = new ServiceHost(t, http);
             host.Open();

@@ -36,5 +36,10 @@ namespace FeedbackSystemClient
         {
             Response.Redirect("DeleteFeedback.aspx");
         }
+
+        protected void DisplayFeedbacks(object sender, EventArgs e)
+        {
+            Response.Redirect("DisplayFeedbacks.aspx");
+        }
     }
 }

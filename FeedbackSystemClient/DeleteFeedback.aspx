@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Delete Feedback</title>
+     <link href="lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
    <style>
         .box{
             width: 500px;
@@ -20,6 +21,7 @@
         }
         .diff{
             margin-bottom:20px;
+            margin-left:10px;
         }
         .submitbtn{
             width: 100%;
@@ -42,12 +44,12 @@
     <form id="form1" runat="server">
         <div>
             <div class="form-group diff">
-                <asp:Label ID="Label1" runat="server" Text="Product's ID:"></asp:Label>
-                <asp:TextBox class="form-control" ID="id" runat="server" placeholder="Enter Product's ID to delete"></asp:TextBox>
+                <asp:Label  ID="Label1" runat="server" Text="Product's ID:"></asp:Label>
+                <asp:TextBox  class="form-control" ID="id" runat="server" placeholder="Enter Product's ID to Delete Feedback" Width="350px"></asp:TextBox>
             </div>
             <br />
-            <asp:Button ID="DeleteFeedbackButton" runat="server" Text="Delete" OnClick="DeleteFeedback_Button"></asp:Button>
-            <asp:Button ID="BackButton" runat="server" Text="Back" OnClick="BackButton_Click"></asp:Button>
+            <asp:Button class="btn btn-danger submitbtn diff" ID="DeleteFeedbackButton" runat="server" Text="Delete" OnClick="DeleteFeedback_Button" Width="150px"></asp:Button>
+            <asp:Button class="btn btn-secondary submitbtn diff" ID="BackButton" runat="server" Text="Back" OnClick="BackButton_Click " Width="150px"></asp:Button>
         </div>
     </form>
 </body>

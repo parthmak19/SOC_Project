@@ -22,7 +22,7 @@ namespace FeedbackSystemService
             cmd.Parameters.AddWithValue("@Ratings", feedback.ProductRatings);
             cmd.ExecuteNonQuery();
             con.Close();
-            return "Feedback added successfully!";
+            return "Feedback Added Successfully!";
         }
 
         public string UpdateFeedback(Feedback feedback)
@@ -36,7 +36,7 @@ namespace FeedbackSystemService
             if (reader.HasRows)
             {
                 con.Close();
-                SqlCommand cmd = new SqlCommand("UPDATE Feedbacks SET Name = @Name, @Category = Category, @Price = Price, @Feedback = Feedback, @Ratings = Ratings WHERE Id = @Id", con);
+                SqlCommand cmd = new SqlCommand("UPDATE Feedbacks SET Name = @Name, Category = @Category, Price = @Price, Feedback = @Feedback, Ratings = @Ratings WHERE Id = @Id", con);
                 cmd.Parameters.AddWithValue("@Id", feedback.ProductID);
                 cmd.Parameters.AddWithValue("@Name", feedback.ProductName);
                 cmd.Parameters.AddWithValue("@Category", feedback.ProductCategory);
@@ -47,12 +47,12 @@ namespace FeedbackSystemService
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 con.Close();
-                return "Feedback updated successfully!";
+                return "Feedback Updated Successfully!";
             }
             else
             {
                 con.Close();
-                return "Feedback with ID = " + feedback.ProductID + " is not present!!";
+                return "Feedback with ID = " + feedback.ProductID + " doesn't exist!!";
             }
         }
 
@@ -73,11 +73,11 @@ namespace FeedbackSystemService
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-                return "Feedback deleted successfully!";
+                return "Feedback Deleted Successfully!";
             }
             else
             {
-                return "Feedback with ID = " + Id + " is not present!!";
+                return "Feedback with ID = " + Id + " doesn't exist!!";
             }
         }
 
@@ -94,7 +94,7 @@ namespace FeedbackSystemService
             Feedback feedback = new Feedback();
             while (reader.Read())
             {
-                feedback.ProductID = reader.GetInt32(0);
+                Id = reader.GetInt32(0);
                 feedback.ProductName = reader.GetString(1);
                 feedback.ProductCategory = reader.GetString(2);
                 feedback.ProductPrice = reader.GetInt32(3);

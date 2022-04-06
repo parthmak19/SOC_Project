@@ -10,11 +10,9 @@ namespace FeedbackSystemClient
 {
     public partial class UpdateFeedback : System.Web.UI.Page
     {
-        //int Id;
         protected void Page_Load(object sender, EventArgs e)
         {
             Label4.Text = "";
-            //Id = Int32.Parse(Request.QueryString["Id"]);
         }
 
         protected void UpdateFeedback_button(object sender, EventArgs e)
@@ -23,6 +21,7 @@ namespace FeedbackSystemClient
             Feedback feedback = new Feedback();
             feedback.ProductID = Convert.ToInt32(id.Text);
             feedback.ProductName = name.Text;
+            feedback.ProductPrice = Convert.ToInt32(price.Text);
             feedback.ProductCategory = Category.Text;
             feedback.ProductFeedback = Feedback.Text;
             feedback.ProductRatings = Convert.ToInt32(ratings.Text);
